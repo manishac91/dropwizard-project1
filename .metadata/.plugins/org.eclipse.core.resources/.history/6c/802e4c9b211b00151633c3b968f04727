@@ -1,0 +1,9 @@
+package eu.kielczewski.example.core;
+
+public class PackageItem {
+	
+	@NotNull
+    @JsonProperty
+    BigDecimal packageId;
+
+}

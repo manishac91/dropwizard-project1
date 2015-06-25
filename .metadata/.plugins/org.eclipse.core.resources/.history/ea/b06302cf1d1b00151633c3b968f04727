@@ -1,0 +1,27 @@
+package eu.kielczewski.example.dao;
+
+import java.math.BigDecimal;
+
+public class UserDAO {
+	
+	private BigDecimal packageId;
+	
+	private BigDecimal itemId;
+
+	public BigDecimal getItemId() {
+		return itemId;
+	}
+
+	public void setItemId(BigDecimal itemId) {
+		this.itemId = itemId;
+	}
+
+	public BigDecimal getPackageId() {
+		return packageId;
+	}
+
+	public void setPackageId(BigDecimal packageId) {
+		this.packageId = packageId;
+	}
+
+}

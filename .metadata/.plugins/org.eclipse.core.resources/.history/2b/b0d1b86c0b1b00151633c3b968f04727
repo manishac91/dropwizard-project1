@@ -1,0 +1,29 @@
+package eu.kielczewski.example;
+
+import com.yammer.dropwizard.Service;
+import com.yammer.dropwizard.config.Bootstrap;
+import com.yammer.dropwizard.config.Environment;
+import eu.kielczewski.example.config.ExampleServiceConfiguration;
+import eu.kielczewski.example.hello.HelloResource;
+
+public class ExampleService extends Service<ExampleServiceConfiguration> {
+
+    public static void main(String[] args) throws Exception {
+        new ExampleService().run(args);
+    }
+
+    @Override
+    public void initialize(Bootstrap<ExampleServiceConfiguration> bootstrap) {
+        bootstrap.setName("dropwizard-example");
+    }
+
+    @Override
+    public void run(ExampleServiceConfiguration conf, Environment env) throws Exception {
+    	env.addResource(new HelloResource(conf.getMessages()));
+    	final DBIFactory factory = new DBIFactory();
+        final DBI jdbi = factory.build(environment, config.getDataSourceFactory(), "postgresql");
+        final UserDAO dao = jdbi.onDemand(UserDAO.class);
+        environment.jersey().register(new UserResource(dao));
+    }
+
+}

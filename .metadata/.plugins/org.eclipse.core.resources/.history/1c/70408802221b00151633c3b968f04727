@@ -1,0 +1,9 @@
+package eu.kielczewski.example.core.mapper;
+
+import org.skife.jdbi.v2.tweak.ResultSetMapper;
+
+import eu.kielczewski.example.core.PackageItem;
+
+public class PackageItemMapper implements ResultSetMapper<PackageItem> {
+
+}

@@ -1,0 +1,15 @@
+package eu.kielczewski.example.dao;
+
+import org.skife.jdbi.v2.sqlobject.Bind;
+import org.skife.jdbi.v2.sqlobject.SqlQuery;
+import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
+
+import eu.kielczewski.example.core.PackageItem;
+
+@RegisterMapper(PackageItemMapper.class)
+public interface PackageItemDAO {
+
+	@SqlQuery("select * from PACKAGE_ITEM where ITEM_ID = :id")
+    PackageItem findById(@Bind("id") int id);
+	
+}

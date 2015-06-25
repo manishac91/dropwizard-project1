@@ -1,0 +1,8 @@
+package eu.kielczewski.example.dao;
+
+public interface PackageItemDAO {
+
+	@SqlQuery("select * from PERSON where ID = :id")
+    Person findById(@Bind("id") int id);
+	
+}

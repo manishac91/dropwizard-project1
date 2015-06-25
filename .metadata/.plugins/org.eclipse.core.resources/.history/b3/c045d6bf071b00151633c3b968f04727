@@ -1,0 +1,6 @@
+messages:
+  hello: Hi My name is this
+  
+http:
+  port: 9000
+  adminPort: 9001

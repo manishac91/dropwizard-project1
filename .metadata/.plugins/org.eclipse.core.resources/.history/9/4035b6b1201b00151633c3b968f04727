@@ -1,0 +1,6 @@
+package eu.kielczewski.example.dao;
+
+
+public class UserDAO extends AbstractDAO<User>{
+
+}

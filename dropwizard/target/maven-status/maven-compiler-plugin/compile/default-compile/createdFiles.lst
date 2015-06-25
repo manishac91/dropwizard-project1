@@ -1,0 +1,8 @@
+eu\kielczewski\example\hello\PackageItemResource.class
+eu\kielczewski\example\config\ExampleServiceConfiguration.class
+eu\kielczewski\example\core\PackageItem.class
+eu\kielczewski\example\ExampleService.class
+eu\kielczewski\example\hello\HelloResource.class
+eu\kielczewski\example\core\mapper\PackageItemMapper.class
+eu\kielczewski\example\config\MessagesConfiguration.class
+eu\kielczewski\example\dao\PackageItemDAO.class

@@ -1,0 +1,12 @@
+package eu.kielczewski.example.hello;
+
+public class UserResource {
+
+	 @GET
+	    @Path("/{id}")
+	    public User getUser(@PathParam("id") long id) {
+	        User user = userDao.getById(id);
+	        return user;
+	    }
+	
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
+<fullyQualifiedTypeName name="com.yammer.dropwizard.db.DatabaseConfiguration"/>
+<fullyQualifiedTypeName name="com.yammer.dropwizard.jdbi.DBIFactory"/>
+<fullyQualifiedTypeName name="org.skife.jdbi.v2.DBI"/>
+<fullyQualifiedTypeName name="com.google.common.net.MediaType"/>
+<fullyQualifiedTypeName name="com.yammer.dropwizard.jersey.params.LongParam"/>
+<fullyQualifiedTypeName name="eu.kielczewski.example.core.PackageItem"/>
+<fullyQualifiedTypeName name="javax.ws.rs.core.MediaType"/>
+</qualifiedTypeNameHistroy>

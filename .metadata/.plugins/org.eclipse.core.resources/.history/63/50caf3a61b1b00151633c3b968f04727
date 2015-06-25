@@ -1,0 +1,7 @@
+package eu.kielczewski.example.dao;
+
+public interface IMyDAO {
+
+	@SqlQuery("select name from something where id = :id")
+	  String findNameById(@Bind("id") int id);
+}

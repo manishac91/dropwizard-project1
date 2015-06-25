@@ -1,0 +1,30 @@
+package eu.kielczewski.example.hello;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.eclipse.jetty.server.Authentication.User;
+
+import com.yammer.dropwizard.jersey.params.LongParam;
+
+@Path("/people/{personId}")
+@Produces(MediaType.APPLICATION_JSON)
+public class UserResource {
+
+	@GET
+	public User getUser(@PathParam("id") LongParam personId) {
+        return findSafely(personId.get());
+    }
+	
+	private User findSafely(long personId) {
+        final Optional<User> person = peopleDAO.findById(personId);
+        if (!person.isPresent()) {
+            throw new Exception("No such user.");
+        }
+        return person.get();
+    }
+
+}

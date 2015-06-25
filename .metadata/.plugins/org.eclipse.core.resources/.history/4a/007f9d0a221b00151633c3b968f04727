@@ -1,0 +1,16 @@
+package eu.kielczewski.example.core.mapper;
+
+import org.skife.jdbi.v2.tweak.ResultSetMapper;
+
+import eu.kielczewski.example.core.PackageItem;
+
+public class PackageItemMapper implements ResultSetMapper<PackageItem> {
+
+	public PackageItem map(int index, ResultSet resultSet, StatementContext statementContext) throws SQLException
+    {
+        return new Person()
+                .setId(resultSet.getInt("ID"))
+                .setName(resultSet.getString("NAME"));
+    }
+	
+}

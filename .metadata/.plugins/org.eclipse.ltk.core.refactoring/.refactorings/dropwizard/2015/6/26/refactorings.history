@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;dropwizard/src/main/java/eu/kielczewski/example/dao/UserDAO.java&apos; to &apos;User.java&apos;" description="Rename resource &apos;UserDAO.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/eu/kielczewski/example/dao/UserDAO.java" name="User.java" stamp="1435225066188" updateReferences="true"/>
+</session>
