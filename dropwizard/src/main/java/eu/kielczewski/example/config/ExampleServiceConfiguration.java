@@ -13,7 +13,7 @@ public class ExampleServiceConfiguration extends Configuration {
     private MessagesConfiguration messages;
 
     public MessagesConfiguration getMessages() {
-        //comment2
+        //comment3
     	return messages;
     }
 
