@@ -31,7 +31,7 @@ public class ExampleService extends Service<ExampleServiceConfiguration> {
      
         final PackageItemDAO packageItemDAO = jdbi.onDemand(PackageItemDAO.class);
         final PackageItemResource packageItemResource = new PackageItemResource(packageItemDAO);
-        // comment-2
+        //comment
         //env.jersey().register(packageItemResource);
         env.addResource(packageItemResource);
         //comment-3
