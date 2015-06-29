@@ -34,6 +34,7 @@ public class ExampleService extends Service<ExampleServiceConfiguration> {
         //comment
         //env.jersey().register(packageItemResource);
         env.addResource(packageItemResource);
+        //comment-3
     }
 
 }
